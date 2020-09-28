@@ -1,0 +1,11 @@
+Cabernet Franc	27.4
+Tannat Uruguaio	33.0
+Merlot Francês	45.5
+Malbec Argentino	35.0
+Pinot Noir	47.77
+Riesling Itálico	54.0
+Chardonnay Americano	38.1
+Gewurztraminer	57.0
+Semillón	39.9
+Sauvignon Blanc	46.9
+Barbera Italiana	39.0
