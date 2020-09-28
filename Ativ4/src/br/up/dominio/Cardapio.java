@@ -115,7 +115,6 @@ public class Cardapio {
 		case 1:
 			for (Item item : listaDePratos) {
 				if (item.getNome().contains(query)) {
-					System.out.println("\n\n achoo\n\n");
 					itemRetornar = item;
 					break;
 				}

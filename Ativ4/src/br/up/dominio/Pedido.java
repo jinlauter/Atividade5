@@ -41,6 +41,11 @@ public class Pedido {
 			String nomeVinho = entrada.nextLine();
 						
 			Item vinho = Cardapio.buscarPorNome(nomeVinho, 3);
+			
+			FileWriter novo_pedido = new FileWriter("C:\\Users\\Vilas Boas\\Desktop\\Trab Prog\\novo_pedido.txt");
+			PrintWriter gravador = new PrintWriter(novo_pedido);		
+			gravador.println("Vinho: " + vinho.getNome() + "  Preço: " + vinho.getPreco());
+			gravador.close();
 		
 			System.out.println("\n \n ");
 		}
@@ -60,9 +65,14 @@ public class Pedido {
 			System.out.println("Escreva o nome da Bebida:");
 			
 			entrada.nextLine();
-			String nomeVinho = entrada.nextLine();
+			String nomeBebida = entrada.nextLine();
 						
-			Item bebida = Cardapio.buscarPorNome(nomeVinho, 2);
+			Item bebida = Cardapio.buscarPorNome(nomeBebida, 2);
+			
+			FileWriter novo_pedido = new FileWriter("C:\\Users\\Vilas Boas\\Desktop\\Trab Prog\\novo_pedido.txt", true);
+			PrintWriter gravador = new PrintWriter(novo_pedido);		
+			gravador.println("Bebida: " + bebida.getNome() + "  Preço: " + bebida.getPreco());
+			gravador.close();
 		
 			System.out.println("\n \n ");
 			
@@ -86,19 +96,15 @@ public class Pedido {
 			
 			String nomePrato = entrada.nextLine();
 						
-			Item vinho = Cardapio.buscarPorNome(nomePrato, 1);
+			Item prato = Cardapio.buscarPorNome(nomePrato, 1);
+			
+			FileWriter novo_pedido = new FileWriter("C:\\Users\\Vilas Boas\\Desktop\\Trab Prog\\novo_pedido.txt", true);
+			PrintWriter gravador = new PrintWriter(novo_pedido);		
+			gravador.println("Prato: " + prato.getNome() + "  Preço: " + prato.getPreco());
+			gravador.close();
 		
 			System.out.println("\n \n ");
 		}
-			
-		FileWriter novo_pedido = new FileWriter("C:\\Users\\Vilas Boas\\Desktop\\Trab Prog\\novo_pedido.txt");
-		PrintWriter gravador = new PrintWriter(novo_pedido);		
-		gravador.println("Bebida: " + bebida.getNome() + "  Preço: " + bebida.getPreco());
-		//gravador.println("Prato: "  + prato.getNome()  + "  Preço: " + prato.getPreco());
-		//gravador.println("Vinho: "  + vinho.getNome()  + "  Preço: " + vinho.getPreco());	
-		
-		gravador.close();
-		
 		
 		Programa.inicio();	
 	}
